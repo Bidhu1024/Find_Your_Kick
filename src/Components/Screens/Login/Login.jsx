@@ -44,7 +44,7 @@ const Login = () => {
             </Typography>
           </Stack>
         </form>
-      </Box>
+      </Box> 
     </Stack>
   )
 }
