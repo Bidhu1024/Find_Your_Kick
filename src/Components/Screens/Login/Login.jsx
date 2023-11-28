@@ -8,7 +8,7 @@ const Login = () => {
   const [email,setEmail] = useState('')
   const [password,setPassword] = useState('')
   return (
-    <Stack sx={{ width: "100vw", position: "relative", height: "100vh", backgroundColor: "red", justifyContent: "center", alignItems: "center" }}>
+    <Stack sx={{ width: "100vw", position: "relative", height: "100vh", justifyContent: "center", alignItems: "center",backgroundImage: `url(${logo})`, backgroundRepeat:"no-repeat" }}>
       {/* <img src={logo} alt="shoe" style={{position:"absolute",top:0,padding:"1rem", left:0, width:"6rem", height:"6rem"}} /> */}
       <Box sx={{borderRadius:"1rem", width: "35rem", height: "35rem", padding: "2rem", bgcolor: "white", boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }}>
         <form autoComplete='off'>
@@ -21,10 +21,10 @@ const Login = () => {
             </Typography>
           </Box>
           <Stack sx={{ mt: "1rem" }}>
-            <Typography fontWeight={"bold"} fontSize={"1.1rem"}>
+            <Typography fontWeight={"bold"} fontSize={"1.3rem"}>
               Login
             </Typography>
-            <Typography fontSize={".9rem"} sx={{mt:".3rem"}}>
+            <Typography fontSize={"1.1rem"} sx={{mt:".3rem"}}>
               Step into style with these killer kicks.
             </Typography>
 
