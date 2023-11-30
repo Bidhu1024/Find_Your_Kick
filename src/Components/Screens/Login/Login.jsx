@@ -14,6 +14,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault()
     dispatch(setUser({ email, password, name }));
+    localStorage.setItem('name');
     nav("/dashboard")
   }
   return (
@@ -41,7 +42,7 @@ const Login = () => {
             <Typography fontSize={"1rem"} fontWeight={"600"} sx={{ mt: ".3rem" }}>
               Name
             </Typography>
-            <TextField value={name} onChange={(e) => setName(e.target.value.toLowerCase())} size="small" type='text' />
+            <TextField value={name} onChange={(e) => setName(e.target.value)} size="small" type='text' />
             <Typography fontSize={"1rem"} fontWeight={"600"} sx={{ mt: ".3rem" }}>
               Email Address
             </Typography>
