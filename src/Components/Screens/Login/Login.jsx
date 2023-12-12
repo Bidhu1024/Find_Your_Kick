@@ -14,7 +14,6 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault()
     dispatch(setUser({ email, password, name }));
-    localStorage.setItem('name');
     nav("/dashboard")
   }
   return (
