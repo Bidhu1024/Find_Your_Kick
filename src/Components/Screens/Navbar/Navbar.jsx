@@ -7,7 +7,7 @@ import TemporaryDrawer from './../Drawer/TemporaryDrawer';
 const Navbar = ({ name }) => {
 
   return (
-    <Box sx={{ display: "flex", width: "100%", border: "1px solid lightgray", height: "3.5rem", padding: "4px 6px", justifyContent: "space-between", alignItems: "center" }}>
+    <Box sx={{ display: "flex", width: "100%", border: "1px solid lightgray", height: "3.5rem", padding: "4px 6px", justifyContent: "space-between", alignItems: "center",position:"sticky" }}>
     <Tooltip title="menu">
      <TemporaryDrawer />
      </Tooltip>
