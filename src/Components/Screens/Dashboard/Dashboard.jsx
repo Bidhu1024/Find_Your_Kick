@@ -11,7 +11,8 @@ import { Carousel } from 'react-responsive-carousel';
 import One from "../../CarouselAssets/One.jpg"
 import Two from "../../CarouselAssets/Two.jpg"
 import Three from "../../CarouselAssets/Three.jpg"
-
+import Four from "../../CarouselAssets/Four.jpg"
+import Five from "../../CarouselAssets/Five.jpg"
 const Dashboard = () => {
   const { email, password, name } = useSelector((state) => state.user);
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
@@ -29,6 +30,7 @@ const Dashboard = () => {
       </Box>
       <div style={{marginTop:"1rem"}}>
       <ReactSimplyCarousel
+   
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
         itemsToShow={1}
@@ -48,7 +50,7 @@ const Dashboard = () => {
             textAlign: 'center',
             width: 30,
           },
-          children: <span>{`>`}</span>,
+          children: <span>{`>>`}</span>,
         }}
         backwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -65,7 +67,7 @@ const Dashboard = () => {
             textAlign: 'center',
             width: 30,
           },
-          children: <span>{`<`}</span>,
+          children: <span>{`<<`}</span>,
         }}
         responsiveProps={[
           {
@@ -77,7 +79,6 @@ const Dashboard = () => {
         speed={400}
         easing="linear"
       >
-        {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
         <div style={{ width: 850, height: 450, background: 'white' }}>
          <img src={One} alt="" /> 
         </div>
@@ -88,26 +89,12 @@ const Dashboard = () => {
         <img src={Three} alt="" /> 
         </div>
         <div style={{  width: 850, height: 450, background: '#133337' }}>
-          slide 3
+        <img src={Four} alt="" /> 
         </div>
         <div style={{  width: 850, height: 450, background: '#ffc0cb' }}>
-          slide 4
+        <img src={Five} alt="" /> 
         </div>
-        <div style={{  width: 850, height: 450, background: '#ffffff' }}>
-          slide 5
-        </div>
-        <div style={{  width: 850, height: 450, background: '#ffe4e1' }}>
-          slide 6
-        </div>
-        <div style={{  width: 850, height: 450, background: '#008080' }}>
-          slide 7
-        </div>
-        <div style={{  width: 850, height: 450, background: '#ff0000' }}>
-          slide 8
-        </div>
-        <div style={{  width: 850, height: 450, background: '#e6e6fa' }}>
-          slide 9
-        </div>
+    
       </ReactSimplyCarousel>
     </div>
     
